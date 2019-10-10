@@ -1,0 +1,3 @@
+[submodule "knative"]
+	path = knative
+	url = https://github.com/knative/docs
