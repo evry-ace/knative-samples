@@ -18,7 +18,7 @@ jobs:
         submodules: true
 
     - name: Publish knative/serving/hello-world to DH
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: evry-ace/github-action-dh-publish@master
       with:
         name: evryace/knative-serving-hello-world-go:0.9.0
         username: ${{ secrets.DOCKER_HUB_USERNAME }}
@@ -27,7 +27,7 @@ jobs:
         workdir: knative/docs/serving/samples/hello-world/helloworld-go
 
     - name: Publish knative/serving/rest-api-go to DH
-      uses: evry-ace/gpr-docker-publish@master
+      uses: evry-ace/github-action-dh-publish@master
       with:
         name: evryace/knative-serving-rest-api-go:0.9.0
         username: ${{ secrets.DOCKER_HUB_USERNAME }}

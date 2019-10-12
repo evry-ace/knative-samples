@@ -18,8 +18,7 @@ jobs:
         submodules: true
 
     - name: Publish knative/serving/hello-world to GPR
-      uses: evry-ace/gpr-docker-publish@master
-      id: docker-hello-world
+      uses: evry-ace/github-action-gpr-docker-publish@master
       with:
         USERNAME: ${{ secrets.DOCKER_USERNAME }}
         PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
@@ -29,8 +28,7 @@ jobs:
         BUILD_CONTEXT: knative/docs/serving/samples/hello-world/helloworld-go
 
     - name: Publish knative/serving/rest-api-go to GPR
-      uses: evry-ace/gpr-docker-publish@master
-      id: docker-rest-api-go
+      uses: evry-ace/github-action-gpr-docker-publish@master
       with:
         USERNAME: ${{ secrets.DOCKER_USERNAME }}
         PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
